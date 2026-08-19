@@ -1,0 +1,24 @@
+# Secrets — never commit real credentials.
+# Kubernetes Secrets are only base64 encoded, which is not encryption.
+infra/k8s/secret.yaml
+.env
+*.pem
+*.key
+
+# Terraform state holds resource attributes in plaintext, including passwords.
+infra/terraform/.terraform/
+*.tfstate
+*.tfstate.*
+*.tfvars
+
+# macOS
+.DS_Store
+
+# Downloaded binaries
+infra/k8s/kubectl
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
