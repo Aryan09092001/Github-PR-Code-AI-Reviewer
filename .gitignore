@@ -5,20 +5,59 @@ infra/k8s/secret.yaml
 *.pem
 *.key
 
-# Terraform state holds resource attributes in plaintext, including passwords.
-infra/terraform/.terraform/
-*.tfstate
-*.tfstate.*
-*.tfvars
-
-# macOS
-.DS_Store
-
-# Downloaded binaries
-infra/k8s/kubectl
+# Environment variables
+.env
+.env.*
+!.env.example
 
 # Python
 __pycache__/
 *.py[cod]
-.venv/
+*.pyo
+*.pyd
+.Python
 venv/
+.venv/
+env/
+*.egg-info/
+dist/
+build/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Node.js
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Terraform
+**/.terraform/
+*.tfstate
+*.tfstate.backup
+*.tfplan
+.terraform.lock.hcl
+
+# Kubernetes / Helm
+*.kubeconfig
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+logs/
+*.log
+
+# Secrets
+*.pem
+*.key
+*.crt
+secrets/
