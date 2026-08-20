@@ -1,4 +1,4 @@
-# Multi-Agent Github PR Code AI Reviewer — Complete Production Setup Documentation
+# Multi-Agent GitHub PR Code AI Reviewer — Complete Production Setup Documentation
 
 This document covers everything from zero to a fully running production system.
 All commands are for Windows Command Prompt (CMD). Open CMD by pressing Win + R, type `cmd`, press Enter.
